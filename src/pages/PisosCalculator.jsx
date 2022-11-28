@@ -23,9 +23,9 @@ function PisosCalculator() {
     const calcular = () => {
       if (operacao==="Área Retangular(10%)")
         return parseFloat(areaComodo*1.10);
-      else if (operacao==="Área Trapezóidal(20%)")
+      else if (operacao==="Área Trapezoidal(20%)")
         return parseFloat(areaComodo*1.20);
-      else if (operacao==="Área com previsão de muitos recortes(30%)")
+      else if (operacao==="Área com muitos recortes(30%)")
         return parseFloat(areaComodo*1.30);
     }
 
@@ -54,7 +54,6 @@ function PisosCalculator() {
           <h1 className="mx-auto px-12 text-left text-blue-900 font-bold font-sans text-l ">Para calcular a quantidade de pisos primeiramente é necessário medir o comprimento e a largura do ambiente para fazer o input dos dados solicidados.
           </h1>
           <h1 className="mx-auto px-12 text-left text-blue-900 font-bold font-sans text-l ">Para encontrar as dimensões e metragem do piso consultar o vendedor ou identificar na própria caixa do material.
-          
           </h1>
             
         </div>
@@ -113,10 +112,10 @@ function PisosCalculator() {
           className="mx-auto my-1 px-2 text-blue-900 border border-blue-900 font-sans font-bold " >
             <option>Área Retangular(10%)</option>
             <option>Área Trapezoidal(20%)</option>
-            <option>Área com previsão de muitos recortes(30%)</option>
+            <option>Área com muitos recortes(30%)</option>
           </select>
             <h1 className="mx-auto ">Selecione a opção considerando a geometria do ambiente:</h1>
-            <h3 className="mx-auto">Quanto mais angulado e desproporcional for o ambiente maior a porcentagem de perdas</h3>
+            <h3 className="mx-auto">Quanto mais angulado e desproporcional for o ambiente, maior será a porcentagem de perdas.</h3>
           
         </div>
 
