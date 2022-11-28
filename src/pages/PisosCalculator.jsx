@@ -23,7 +23,7 @@ function PisosCalculator() {
     const calcular = () => {
       if (operacao==="Área Retangular(10%)")
         return parseFloat(areaComodo*1.10);
-      else if (operacao==="Área Trapezóidal(20%)")
+      else if (operacao==="Área Trapezoidal(20%)")
         return parseFloat(areaComodo*1.20);
       else if (operacao==="Área com previsão de muitos recortes(30%)")
         return parseFloat(areaComodo*1.30);
