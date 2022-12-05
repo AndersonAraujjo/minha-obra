@@ -100,32 +100,32 @@ function PisosCalculator() {
     return (
       <div className="flex flex-col">
 
-        <div className="flex items-center w-full h-20 text-blue-900 bg-blue-900 fixed" >
+        <div className="flex items-center w-full h-20 bg-blue-900 fixed" >
           <h1 className="mx-auto font-rubik text-4xl text-white">Minha Obra</h1>
         </div>
         <div className="flex text-2xl text-blue-900 font-bold mt-32">
           <h1 className="mx-auto font-sans font-bold">Quantificação de Pisos</h1>
         </div>
-        <div className="flex  flex-col text-base mt-12">
-          <h1 className="mx-auto px-12 text-left text-blue-900 font-bold font-sans text-l">Para calcular a quantidade de pisos a serem assentados em determinado local, primeiramente é necessário que sejam retiradas as medidas do ambiente a ser revestido, para com isso fazer o input dos dados solicitados abaixo. Com as medidas em mãos escolher o tipo de ambiente de acordo com a semelhança com o seu local e após isso iserir suas medidas.
+        <div className="flex flex-col mx-auto max-w-screen-lg px-12 text-base text-l mt-12">
+          <h1 className=" text-blue-900 font-bold font-sans text-l">Para calcular a quantidade de pisos a serem assentados em determinado local, primeiramente é necessário que sejam retiradas as medidas do ambiente a ser revestido, para com isso fazer o input dos dados solicitados abaixo. Com as medidas em mãos escolher o tipo de ambiente de acordo com a semelhança com o seu local e após isso inserir suas medidas.
           </h1>
-          <h1 className="mx-auto px-12 text-left text-blue-900 font-bold font-sans text-l ">Para encontrar as dimensões e metragem do piso consultar o vendedor ou identificar na própria caixa do material.
+          <h1 className=" text-blue-900 font-bold font-sans text-l ">Para encontrar as dimensões e metragem do piso consultar o vendedor ou identificar na própria caixa do material.
           </h1>
-          <h1 className="mx-auto px-12 text-left text-blue-900 font-bold font-sans text-l ">Muita atenção na hora de escolher a direção do assentamento dos pisos, pois isso impctará na quantidade adequada de peças.
+          <h1 className=" text-blue-900 font-bold font-sans text-l ">Muita atenção na hora de escolher a direção do assentamento dos pisos, pois isso impctará na quantidade adequada de peças.
           </h1>
             
           </div>
 
-            <div className="flex flex-col px-12 mt-12 text-center text-blue-900  text-base font-sans font-bold">
-              <div className="mx-auto px-12 flex flex-col text-center text-base font-sans mt-12 text-blue-900 ">
-            <h1 className="mx-auto px-12 flex flex-col text-base font-sans font-bold">Selecione o tipo de ambiente:</h1>
+            <div className="flex flex-col mx-auto mt-12 text-center text-blue-900  text-base font-sans font-bold">
+              <div className="flex flex-col text-center text-base font-sans mt-12 text-blue-900 ">
+            <h1 className="flex flex-col text-base font-sans font-bold">Selecione o tipo de ambiente:</h1>
             
            
           </div>
          
 
           <div onChange={(e) => setOperacaoArea(e.target.value)}
-            className=" w-full grid grid-cols-2 sm:grid-cols-4 gap-6 text-center py-8 px-auto sm:px-0 mx-auto text-blue-900 font-sans font-bold " >
+            className=" w-full grid grid-cols-2 sm:grid-cols-4 gap-12 text-center py-8 px-auto sm:px-0 mx-auto text-blue-900 font-sans font-bold " >
             <div>
               
               <input name="theradio" id="areaRetangular" type='radio' value="areaRetangular"/>
@@ -266,7 +266,7 @@ function PisosCalculator() {
    
         </div>
 
-        <div className=" text-center text-blue-900 mx-auto px-12 flex flex-col text-base font-sans font-bold mt-12 border-2 border-blue-900">
+        <div className=" text-center text-blue-900 mx-auto max-w-screen-lg  px-10 flex flex-col text-base font-sans font-bold mt-12 border-2 border-blue-900">
           <label >Você utilizará: {parseFloat(resultado).toFixed(2)}m² de piso ou {Math.round(peças)} peças de piso. </label>
         </div>
 
@@ -275,7 +275,7 @@ function PisosCalculator() {
             <h1 className=" text-blue-900 mx-auto px-12 font-sans font-bold">Quantificação dos Rodapés</h1>
           </div>
           <div className="flex  flex-col text-base mt-12">
-            <h1 className="mx-auto px-12 text-left text-blue-900 font-bold font-sans text-l ">Para calcular a quantidade de pisos necessários para execução do rodapé é necessário medir todo o perímetro do ambiente e descontar os comprimentos dos vãos onde não serão colocados rodapés.
+            <h1 className="mx-auto max-w-screen-lg px-12 text-left text-blue-900 font-bold font-sans text-l ">Para calcular a quantidade de pisos necessários para execução do rodapé é necessário medir todo o perímetro do ambiente e descontar os comprimentos dos vãos onde não serão colocados rodapés.
             </h1>
             
           </div>
@@ -319,12 +319,12 @@ function PisosCalculator() {
                 </div>  
               </div>
 
-              <h2 className="mx-auto px-12 text-left text-blue-900 font-sans text-l ">
+              <h2 className="mx-auto max-w-screen-lg px-12 text-left text-blue-900 font-sans text-l ">
               Fique atento, no campo acima devem ser inseridos os comprimentos de paredes e aberturas em metros, as dimensões da peça em centimetros e a altura do rodapé também é em centimetros.
               </h2>
 
-              <div className=" text-center text-blue-900 mx-auto px-12 flex flex-col text-base font-sans font-bold mb-12 mt-12 border-2 border-blue-900">
-                <label>Você utilizará: {(rodape*(compPecaRodape*alturaPecaRodape))/10000}m² ou {(rodape)} peças de piso para fazer o rodapé.</label>
+              <div className=" text-center text-blue-900 mx-auto max-w-screen-lg px-4 flex flex-col text-base font-sans font-bold mb-20 mt-12 border-2 border-blue-900">
+                <label>Você utilizará: {(rodape*(compPecaRodape*alturaPecaRodape))/10000}m² ou {(rodape)} peças de piso para o rodapé.</label>
               </div>
             </div>
             
